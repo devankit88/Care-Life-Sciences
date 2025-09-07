@@ -30,12 +30,21 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="bg-gradient-to-br from-deep-blue to-emerald-green p-3 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+              {/* <div className="bg-gradient-to-br from-deep-blue to-emerald-green p-3 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
                 <Heart className="h-8 w-8 text-white" />
+              </div> */}
+
+              <div className="">
+                <img 
+                  src="/logo.jpeg" 
+                  alt="Logo" 
+                  className="h-14 w-14 object-contain" 
+                />
               </div>
+
               <div>
                 <div className="text-xl font-bold gradient-text">Care Life Sciences</div>
-                <div className="text-sm text-gray-600 font-medium">Pharmaceutical Distribution</div>
+                
               </div>
             </Link>
 
