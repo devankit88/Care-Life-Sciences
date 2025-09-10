@@ -85,7 +85,8 @@ const Contact: React.FC = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
                     <div className="text-gray-600">
                       <p>+91 9004664055</p>
-                      <p className="text-sm">Contact Person: Vikash Tiwari (Owner)</p>
+                      <p>+91 9004571337</p>
+                      <p className="text-sm">Contact Person: Vikash Tiwari </p>
                     </div>
                   </div>
                 </div>
