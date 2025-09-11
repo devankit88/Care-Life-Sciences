@@ -150,7 +150,7 @@ const About: React.FC = () => {
                 pharmaceutical distribution in the region.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center">
+            {/* <div className="bg-white p-8 rounded-xl shadow-lg text-center">
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-10 w-10 text-green-600" />
               </div>
@@ -160,7 +160,7 @@ const About: React.FC = () => {
                 Operational leader ensuring day-to-day excellence and driving the company's 
                 growth and customer satisfaction initiatives.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
