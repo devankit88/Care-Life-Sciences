@@ -81,32 +81,35 @@ const Home: React.FC = () => {
       >
         <FloatingIcons />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 parallax-content">
-          <div className="text-center animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-              Care Life Sciences
-            </h1>
-            <p className="text-2xl md:text-3xl mb-10 text-white/90 font-light">
-              Your Trusted Partner in Pharmaceutical Distribution
-            </p>
-            <p className="text-lg md:text-xl mb-12 max-w-4xl mx-auto text-white/80 leading-relaxed">
-              Providing the best range of genuine pharmaceutical & healthcare products in Kalyan, Maharashtra, 
-              with a commitment to quality and service since 2017.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link
-                to="/products"
-                className="bg-gradient-to-r from-emerald-green to-light-blue text-white px-10 py-4 rounded-xl font-semibold btn-3d text-lg shadow-3d hover:shadow-3d-hover"
-              >
-                View Our Products
-              </Link>
-              <Link
-                to="/contact"
-                className="border-2 border-white/50 backdrop-blur-sm text-white px-10 py-4 rounded-xl font-semibold hover:bg-white hover:text-deep-blue transition-all duration-300 btn-3d text-lg"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
+    <div className="text-center animate-fade-in">
+  <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+    Care Life Sciences
+  </h1>
+
+  <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white/90 leading-relaxed">
+    Care Life Sciences is one of the fastest growing, leading young pharmaceutical companies. We are providing innovative health care products under the guidance of Mr. R. K. Pandey.
+  </p>
+
+  <p className="text-base md:text-lg mb-10 max-w-3xl mx-auto text-white/80 leading-relaxed">
+    The major segments that we cater to are Gynaecology, Orthopedic, Respiratory, Dermatologist & Pediatric. We believe in an active and growing culture that has helped us put the company at such a high pedestal in a short amount of time. We retain a specialty marketing process in the Indian pharma industry through our structure of customer-dedicated marketing teams and comprehensive product portfolios.
+  </p>
+
+  <div className="flex flex-col sm:flex-row gap-6 justify-center">
+    <Link
+      to="/products"
+      className="bg-gradient-to-r from-emerald-green to-light-blue text-white px-10 py-4 rounded-xl font-semibold btn-3d text-lg shadow-3d hover:shadow-3d-hover"
+    >
+      View Our Products
+    </Link>
+    <Link
+      to="/contact"
+      className="border-2 border-white/50 backdrop-blur-sm text-white px-10 py-4 rounded-xl font-semibold hover:bg-white hover:text-deep-blue transition-all duration-300 btn-3d text-lg"
+    >
+      Contact Us
+    </Link>
+  </div>
+</div>
+
         </div>
       </section>
 
@@ -253,3 +256,5 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+
