@@ -69,11 +69,11 @@ const Contact: React.FC = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Address</h3>
 <div className="text-gray-600">
   <p>Care Life Sciences</p>
-  <p>Office No. 3, Sai Anandi Heights</p>
-  <p>Katemanewali, Kalyan East</p>
-  <p>Thane, Maharashtra - 421306, India</p>
-
+  <p>3, Sai Anandi Heights</p>
+  <p>Thane, Mumbai</p>
+  <p>Maharashtra 421306</p>
 </div>
+
 
                   </div>
                 </div>
