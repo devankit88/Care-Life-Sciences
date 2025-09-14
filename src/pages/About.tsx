@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Eye, Users, Award } from 'lucide-react';
+import { Target, Eye, Users, Award, Shield, Truck } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -117,16 +117,44 @@ const About: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white p-6 rounded-lg text-center shadow-md">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">10+</div>
-                  <div className="text-sm text-gray-600">Team Members</div>
-                </div>
-                <div className="bg-white p-6 rounded-lg text-center shadow-md">
-                  <div className="text-2xl font-bold text-green-600 mb-2">7+</div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
+
+              {/* NEW: Quick Stats / Values Grid */}
+              <div>
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <div className="mb-4 text-center">
+                    <h4 className="text-lg font-semibold text-gray-900">Company Snapshot</h4>
+                    <p className="text-sm text-gray-500">Key milestones & reach</p>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                    <div className="flex flex-col items-center p-3">
+                      <div className="text-2xl font-bold text-green-600">2017</div>
+                      <div className="text-xs text-gray-500 mt-1">Founded</div>
+                    </div>
+
+                    <div className="flex flex-col items-center p-3">
+                      <div className="text-2xl font-bold text-gray-900">10+</div>
+                      <div className="text-xs text-gray-500 mt-1">Distributors</div>
+                    </div>
+
+                    <div className="flex flex-col items-center p-3">
+                      <div className="text-2xl font-bold text-gray-900">2000+</div>
+                      <div className="text-xs text-gray-500 mt-1">Retailers</div>
+                    </div>
+
+                    <div className="flex flex-col items-center p-3">
+                      <div className="text-2xl font-bold text-gray-900">1000+</div>
+                      <div className="text-xs text-gray-500 mt-1">Doctors</div>
+                    </div>
+
+                    <div className="flex flex-col items-center p-3">
+                      <div className="text-2xl font-bold text-emerald-600">100%</div>
+                      <div className="text-xs text-gray-500 mt-1">Licensed & Compliant</div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -138,7 +166,7 @@ const About: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Leadership</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-10 w-10 text-blue-600" />
@@ -150,17 +178,7 @@ const About: React.FC = () => {
                 pharmaceutical distribution in the region.
               </p>
             </div>
-            {/* <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-10 w-10 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Vikash Tiwari</h3>
-              <p className="text-green-600 mb-4">Owner</p>
-              <p className="text-gray-600">
-                Operational leader ensuring day-to-day excellence and driving the company's 
-                growth and customer satisfaction initiatives.
-              </p>
-            </div> */}
+
           </div>
         </div>
       </section>

@@ -67,12 +67,14 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Address</h3>
-                    <div className="text-gray-600">
-                      <p>Care Life Sciences</p>
-                      <p>Sai Anandi Heights, Office No. 3</p>
-                      <p>Katemanewali, Kalyan East</p>
-                      <p>Thane, Maharashtra - 421306, India</p>
-                    </div>
+<div className="text-gray-600">
+  <p>Care Life Sciences</p>
+  <p>Office No. 3, Sai Anandi Heights</p>
+  <p>Katemanewali, Kalyan East</p>
+  <p>Thane, Maharashtra - 421306, India</p>
+
+</div>
+
                   </div>
                 </div>
 
@@ -112,8 +114,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Business Hours</h3>
                     <div className="text-gray-600">
-                      <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                      <p>Saturday: 9:00 AM - 2:00 PM</p>
+                      <p>Monday - Saturday: 11:00 AM - 6:00 PM</p>
+                    
                       <p>Sunday: Closed</p>
                     </div>
                   </div>
@@ -243,30 +245,7 @@ const Contact: React.FC = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us</h2>
-            <p className="text-lg text-gray-600">
-              Visit our office in Kalyan East, Thane for direct consultation and support.
-            </p>
-          </div>
-          
-          <div className="bg-gray-200 rounded-xl overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2951234567891!2d73.1612!3d19.2439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7953e8c5e4b51%3A0x4b12345678901234!2sKalyan%20East%2C%20Kalyan%2C%20Maharashtra%20421306!5e0!3m2!1sen!2sin!4v1234567890123"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Care Life Sciences Location"
-            ></iframe>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 };

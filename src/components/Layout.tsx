@@ -143,13 +143,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
             <div>
               <h3 className="text-lg font-semibold mb-6 text-emerald-green">Contact Info</h3>
-              <div className="space-y-2 text-gray-300">
-                <p className="text-sm">Sai Anandi Heights, Office No. 3</p>
-                <p className="text-sm">Katemanewali, Kalyan East</p>
-                <p className="text-sm">Thane, Maharashtra - 421306</p>
-                <p className="text-sm">Phone: +91 9004664055</p>
-                <p className="text-sm">Email: info.carelifescience@gmail.com</p>
-              </div>
+<div className="space-y-2 text-gray-300">
+  <p className="text-sm">3, Sai Anandi Heights</p>
+  <p className="text-sm">Thane, Mumbai</p>
+  <p className="text-sm">Maharashtra - 421306</p>
+  <p className="text-sm">Phone: +91 9004664055</p>
+  <p className="text-sm">Email: info.carelifescience@gmail.com</p>
+</div>
+
             </div>
           </div>
 

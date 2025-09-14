@@ -39,9 +39,11 @@ const FloatingIcons: React.FC = () => {
 };
 
 const Home: React.FC = () => {
+  // Counters: updated to include Distributors, Retailers, Doctors
   const foundedCounter = useCounter(2017);
-  const employeesCounter = useCounter(10);
-  const turnoverCounter = useCounter(1.5);
+  const distributorsCounter = useCounter(10);
+  const retailersCounter = useCounter(2000);
+  const doctorsCounter = useCounter(1000);
   const complianceCounter = useCounter(100);
 
   useEffect(() => {
@@ -50,8 +52,9 @@ const Home: React.FC = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             foundedCounter.setIsVisible(true);
-            employeesCounter.setIsVisible(true);
-            turnoverCounter.setIsVisible(true);
+            distributorsCounter.setIsVisible(true);
+            retailersCounter.setIsVisible(true);
+            doctorsCounter.setIsVisible(true);
             complianceCounter.setIsVisible(true);
           }
         });
@@ -178,21 +181,30 @@ const Home: React.FC = () => {
       >
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center relative z-10">
+          {/* Using responsive grid; on larger screens show 5 columns */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-center relative z-10 items-center">
             <div className="group">
-              <div className="counter text-white mb-4">{foundedCounter.count}</div>
+              <div className="counter text-white mb-4 text-3xl font-bold">{foundedCounter.count}</div>
               <div className="text-white/80 text-lg font-medium">Founded</div>
             </div>
+
             <div className="group">
-              <div className="counter text-white mb-4">{employeesCounter.count}+</div>
-              <div className="text-white/80 text-lg font-medium">Team Members</div>
+              <div className="counter text-white mb-4 text-3xl font-bold">{distributorsCounter.count}+</div>
+              <div className="text-white/80 text-lg font-medium">Distributors</div>
             </div>
+
             <div className="group">
-              <div className="counter text-white mb-4">₹{turnoverCounter.count}Cr</div>
-              <div className="text-white/80 text-lg font-medium">Annual Turnover</div>
+              <div className="counter text-white mb-4 text-3xl font-bold">{retailersCounter.count}+</div>
+              <div className="text-white/80 text-lg font-medium">Retailers</div>
             </div>
+
             <div className="group">
-              <div className="counter text-white mb-4">{complianceCounter.count}%</div>
+              <div className="counter text-white mb-4 text-3xl font-bold">{doctorsCounter.count}+</div>
+              <div className="text-white/80 text-lg font-medium">Doctors</div>
+            </div>
+
+            <div className="group">
+              <div className="counter text-white mb-4 text-3xl font-bold">{complianceCounter.count}%</div>
               <div className="text-white/80 text-lg font-medium">Licensed & Compliant</div>
             </div>
           </div>
